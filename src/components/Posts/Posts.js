@@ -41,7 +41,7 @@ function Posts({ posts, intro, id }) {
               id={`post-${post.id}`}
             >
               <div className={styles.card}>
-                <Link href={post?.uri ?? '#'}>
+                <Link href={post?.uri ?? '#'} prefetch={false}>
                   <a className={styles[`image-holder`]} tabIndex="-1">
                     <FeaturedImage
                       className={styles.image}
